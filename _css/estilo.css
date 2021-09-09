@@ -1,0 +1,84 @@
+/*cores
+8EE4AF -- azul
+edf5e1 -- branco
+5cdb95 -- verde azulado
+#907163 -- castanho
+#379683  -- azul verde
+8d8741 -- dourado
+daa520 -- dourado2
+*/
+
+
+body{
+    background-color: black;
+    background-size:cover;
+}
+/*formatação logotipo*/
+figure img#logo{
+    width: 175px;
+    height: 100px;
+    border-radius: 0px 50px 0px 50px;
+    float: left;
+}
+
+
+/*formatação do menu */
+
+section#caixa_menu{
+    display: inline-block;
+}
+
+ nav#menu ul{
+     list-style:none;
+     text-transform: uppercase;
+ }
+
+ nav#menu li{
+     display: inline-block;
+     background-color: #8d8741;
+     padding: 10px;
+     margin: 5px;
+     transition: 0.5s;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 600;       /*um bold */
+     border-radius: 10px;
+     width: 150px;
+     text-align: center;
+           
+ }
+
+ nav#menu li:hover{
+     background-color: #daa520;  
+ }
+
+
+ nav#menu a{
+     color: rgb(14, 7, 9);  /*cor dos links a preto*/
+     text-decoration: none;     /*retira o sublinhado dos links*/
+ }
+
+ 
+
+/*estilos do footer */
+
+footer{
+    
+    color: #907163;
+    clear: both;
+    text-align: center;
+    border-top: 1px dashed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+    
+}
+
+footer a{
+   color: #edf5e1;  /*cor dos links a preto*/
+   text-decoration: none;     /*retira o sublinhado dos links*/
+  
+}
+
+footer a:hover{
+    color: red;
+}
