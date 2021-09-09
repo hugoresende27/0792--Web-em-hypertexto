@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/estilo.css">
+    <script src="/js/slider.js"></script>
     <title>Prime Tunes Review</title>
 </head>
 <body>
-   
-    <section id="caixa_menu">
+
+<div id="main">
+    <!--seccao do cabeçalho com o menu-->
+    <section>
         <figure>
             <img id="logo" src="_img/logo.png">
         </figure>
         <nav id="menu">
+            <br>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="crono.html">Cronologia</a></li>
@@ -23,7 +27,68 @@
         </ul>
         </nav>
     </section>
+
+    <!-- seccao de slider -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="/_img/slider_1.png" style="width:50%">
+        <div class="text"> 
+            <p>Título: Conflict of Interest </p>
+            <p>Interprete : Ghetts</p>
+            <p>Data de Lançamento: 19 February 2021</p>
+            <p class="txt_slider">Conflict of Interest is the third studio album by British rapper Ghetts, released on 19 February 2021 by Ghetts Limited and Warner Records. It includes guest appearances from Skepta, Dave, Wretch 32, Giggs, Stormzy, Ed Sheeran, Emeli Sandé, and more.The third full-length studio release for the British grime artist features guest appearances from BackRoad Gee, Dave, Giggs, Hamzaaand, Jaykae, Aida Lae, Miraa May, Pa Salieu, Emeli Sande, Moonchild Sanelly, Ed Sheeran, Skepta, Stormzy, and Wretch 32.</p1>
+        </div>
+    </div>
   
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="/_img/slider_2.png" style="width:50%">
+        <div class="text">
+            <p>Título: Sometimes I Might Be Introvert</p>
+            <p>Interprete : Little Simz</p>
+            <p>Data de Lançamento: 3 September 2021</p> 
+            <p class="txt_slider">Sometimes I Might Be Introvert is the fourth studio album by British rapper Little Simz, released on 3 September 2021 by Age 101 Music and AWAL.[1] The album succeeds the Mercury Prize-nominated album Grey Area,[2] released in 2019, and the five-track EP, Drop 6 (2020).[3][4] It is supported by five singles: "Introvert", "Woman", "Rollin Stone", "I Love You, I Hate You" and "Point and Kill". The album is produced by frequent collaborator Inflo, and includes guest appearances from Cleo Sol and Obongjayar.</p> 
+        </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="/_img/slider_3.png" style="width:50%">
+        <div class="text">
+            <p>Título: The Bitter Truth</p>
+            <p>Interprete :  Evanescence</p>
+            <p>Data de Lançamento: 	March 26, 2021</p>
+            <p class="txt_slider">The Bitter Truth is the fifth studio album by American rock band Evanescence. It was released on March 26, 2021, through BMG Rights Management and was produced by Nick Raskulinecz.[4] The album is the band's first in more than three years, following 2017's Synthesis, as well as their first full album of new material since their self-titled third album (2011).</p>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="/_img/slider_4.png" style="width:50%">
+            <div class="text">
+                <p>Título: Certified Lover Boy</p>
+                <p>Interprete : Drake</p>
+                <p>Data de Lançamento: TBA</p>
+                <p class="txt_slider">Certified Lover Boy is the sixth studio album by Canadian rapper Drake. It was released on September 3, 2021, through OVO Sound and Republic Records. It features guest appearances by Lil Baby, Lil Durk, Giveon, Jay-Z, Travis Scott, Future, Young Thug, Yebba, 21 Savage, Project Pat, Tems, Ty Dolla Sign, Lil Wayne, Rick Ross, and Kid Cudi. Production was handled by frequent collaborators 40, Nineteen85, PartyNextDoor, OZ, and Vinylz, among others. The album was initially set for release in January 2021, but was delayed multiple times.</p>
+            </div>
+        </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+ 
     <footer>
         <p>Copyright 2021 - by Hugo Resende Products </p>
         <a href="https://www.facebook.com/hugo.c.resende" target="blank"> Facebook </a> | <a href="https://www.instagram.com/hugo.c.res/" target="blank"> Instagram </a> | <a href="https://www.linkedin.com/in/hugo-resende-781ab1111/" target="blank"> LinkedIn </a>
@@ -31,5 +96,6 @@
         document.write("<p>Hoje é dia "+ Date());
     </script>
     </footer>
+</div>
 </body>
 </html>
