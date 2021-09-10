@@ -12,6 +12,7 @@ daa520 -- dourado2
 body{
     background-color: black;
     background-size:cover;
+    color: white;
 }
 /*formatação logotipo*/
 figure img#logo{
@@ -43,6 +44,14 @@ figure img#logo{
            
  }
 
+ /*formatacao titulos em h1*/
+ h1.titulos{
+     font-family:rockwell;
+     font-size: 20pt;
+     text-align: center;
+     color:#daa520 ;
+ }
+
  nav#menu li:hover{
      background-color: #daa520;  
  }
@@ -57,7 +66,7 @@ figure img#logo{
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+.conteudo {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -103,7 +112,7 @@ figure img#logo{
   font-size: 25px;
   padding: 0px 20px;
   position: absolute;
-  top: 5px;
+  top: 30px;
   left:50%;
   text-align: left;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

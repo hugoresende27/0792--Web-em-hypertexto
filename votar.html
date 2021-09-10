@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/forms.css">
+    
+    <title>Prime Tunes Review</title>
+
+
+    <script>
+        function updateTextInput(val) {
+            document.getElementById('textInput').value=val; 
+          }
+    </script>
+</head>
+<body>
+
+<div id="main">
+    <!--seccao do cabeçalho com o menu-->
+    <section>
+        <figure>
+            <img id="logo" src="_img/logo.png">
+        </figure>
+        <nav id="menu">
+            <br>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="crono.html">Cronologia</a></li>
+            <li><a href="genero.html">Gênero</a></li>
+            <li><a href="ranking.html">Rankings</a></li>
+            <li><a href="votar.html">Votar</a></li>
+        </ul>
+        </nav>
+    </section>
+    <!--seccao do form-->
+<div class="conteudo">
+    <form method="POST" id="fContato" action="mailto:hugoresende27@gmail.com" oninput="calc_total()">      <!--este metodo so funciona se tiver um servidor de mail instalado na maquina, como o outlook. outra maneira é usar o php.. ???-->
+        <fieldset id="usuario">
+        <legend>    Identificação do Usuário  </legend>
+                    <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+                    <p><label for="cPass">Senha: </label><input type="password" name="pPass" id="cPass" placeholder="8 digitos" size="8" maxlength="8"> </p>
+                    <p><label for="cMail">E-mail:</label> <input type="email" name="eMail" id="cMail" size="30" maxlength="40" placeholder="oseuemail@servidor.net"> </p>
+                    <fieldset id="sexo">
+                        <legend>Sexo:</legend>
+                        <input type="radio" name="sexo" id="cMas"  checked> <label for="cMas"> Masculino</label><br/>
+                        <input type="radio" name="sexo" id="cFem"><label for="cFem">Feminino</label>
+                    </fieldset>
+                    <p><label for="cData_nas">Data de Nascimento:</label> <input type="date" name="dData" id="cData_nas"/ > </p>
+        </fieldset>
+    
+        <fieldset id="endereco">
+        <legend>     Endereço do Usuário </legend>
+                <p><label for="cRua">  Rua: </label><input type="text" name="tRua" id="cRua" size ="13" maxlength="80" placeholder="Rua,Avenida,travessa..."> </p>
+                <p> <label for="cNum"> Número: </label><input type="number" name="nNum" id="cNum" min="0" max="999"> </p>
+    
+                <p> <label for="cAld"> Aldeia: </label> <input type="text" name="tAld" id="cAld"  list="aldeias">
+                </p>
+                <datalist id="aldeias">
+                    <option value="Brenha"></option>
+                    <option value="Santana"></option>
+                    <option value="Alhadas"></option>
+                </datalist>
+    
+                <p><label for="cCid">Cidade: </label> 
+                    <select id="cCid">
+                        <optgroup label="Norte">
+                            <option value="gui">Guimarães</option>
+                            <option value="por">Porto</option>
+                            <option value="bra">Braga</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="lis">Lisboa</option>
+                            <option value="far">Faro</option>
+                            <option value="bej">Beja</option>
+                        </optgroup>
+                        <optgroup label="Centro">
+                            <option value="fig">Figueira da Foz</option>
+                            <option value="coi">Coimbra</option>
+                            <option value="ave">Aveiro</option>
+                        </optgroup>
+                    </select></p>
+                <p><label for="cPais">País:</label>
+                <select id="cPais">
+                    <optgroup label="Europa">
+                        <option value="pt">Portugal</option>
+                        <option value="sp">Espanha</option>
+                        <option value="fr">França</option>
+                    </optgroup>
+                    <optgroup label="Resto do Mundo">
+                        <option value="us">Estados Unidos</option>
+                        <option value="cn">Canadá</option>
+                        <option value="mr">Marrocos</option>
+                    </optgroup></p>
+                </select>
+        </fieldset>
+    
+        <fieldset id="mensagem">
+        <legend>  Voto do Usuário</legend>
+            <select>
+                <optgroup label="Rock">
+                    <option>AC/DC - Back in Black</option>
+                    <option>Meat Loaf - Bat Out of Hell</option>
+                    <option>Pink Floyd - The Dark Side of the Moon</option>
+                    <option>Eagles - Their Greatest Hits (1971–1975)</option>
+                </optgroup>
+                <optgroup label="Pop">
+                    <option>Michael Jackson - Thriller</option>
+                    <option>Whitney Houston - The Bodyguard</option>
+                    <option>Shania Twain - Come On Over</option>
+                    <option>Celine Dion - Falling into You</option>
+                </optgroup>
+                <optgroup label="Rap">
+                    <option>Little Simz - Sometimes I Might Be Introvert</option>
+                    <option>Ghetts - Conflict of Interest</option>
+                    <option>Drake - Certified Lover Boy</option>
+                   
+                </optgroup>
+            </select>
+                <p>
+                    <label>De 0 a 100</label>
+                    <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+                    <input type="text" id="textInput" value="" size="2">
+                </p>
+                <p><label for="cMsg">Mensagem:</label>
+                    <textarea name="txtArea" id="cMsg" placeholder="Deixe aqui a sua mensagem...." cols="50" rows="5">
+    
+                    </textarea>    
+                </p>
+                <input type="submit" value="Votar"/>
+        </fieldset>
+    
+       
+    
+           
+            
+    
+    </form>
+</div>
+
+
+    <!--seccao footer-->
+    <footer>
+        <p>Copyright 2021 - by Hugo Resende Products </p>
+        <a href="https://www.facebook.com/hugo.c.resende" target="blank"> Facebook </a> | <a href="https://www.instagram.com/hugo.c.res/" target="blank"> Instagram </a> | <a href="https://www.linkedin.com/in/hugo-resende-781ab1111/" target="blank"> LinkedIn </a>
+    <script>
+        document.write("<p>Hoje é dia "+ Date());
+    </script>
+    </footer>
+</div>
+</body>
+</html>

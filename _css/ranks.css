@@ -1,0 +1,197 @@
+article#album{
+    position: block;
+    float: left;
+}
+
+ul#album-fotos{        /*criou -se uma lista em html, depois com css a lista ficou com o formato de quadrados a flutuar*/
+    width: auto;   /*no ecra. mudou-se por fim o background de cada quadrado atraves do url, cada <li> levou um id*/
+    margin: 0px;    /*e assim usa-se ul#album-fotos li#foto01{ */
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li{
+    float:left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid branco;
+    background-color: #8d8741;
+    box-shadow: 1px 1px 3px #daa520;
+    /*-webkit-transition: all .4s ease-in;        /*efeito webkit para o zoom */
+}
+
+ul#album-fotos li span{     /*para tornar a legenda invisivel*/
+    opacity:0;              /*opacity 0*/
+    color: #edf5e1;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,.3);
+    font-size: 11pt;
+    line-height: 370px;     /*coloca a legenda no fundo*/
+    padding: 5px;
+
+}
+
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+
+ul#album-fotos li:hover span{       
+    opacity: 1;     /*quando rato por cima, opacity 1*/
+}
+
+ul#album-fotos li#foto01{
+    background: url("/_img/nr1.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto02{
+    background: url("/_img/nr2.png");
+    background-position: auto;       /*centra a imagem a meio*/
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto03{
+    background: url("/_img/nr3.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto04{
+    background: url("/_img/nr4.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto05{
+    background: url("/_img/nr5.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto06{
+    background: url("/_img/nr6.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto07{
+    background: url("/_img/nr7.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto07:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto08{
+    background: url("/_img/nr8.png");
+    background-position: auto;       /*centra a imagem a meio*/
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto08:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto09{
+    background: url("/_img/nr9.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto09:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto10{
+    background: url("/_img/nr10.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto11{
+    background: url("/_img/nr11.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#album-fotos li#foto12{
+    background: url("/_img/nr12.png");
+    background-position: auto;
+    background-size: 280px 280px;
+    background-color: aliceblue;
+}
+
+ul#album-fotos li#foto12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
