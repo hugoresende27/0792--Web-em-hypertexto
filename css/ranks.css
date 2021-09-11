@@ -1,6 +1,7 @@
 article#album{
     position: block;
     float: left;
+    margin-top: -50px;
      
 }
 
