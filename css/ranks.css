@@ -1,7 +1,22 @@
 article#album{
     position: block;
     float: left;
+     
 }
+
+h1.ranks{
+    background-color: #daa520;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0e0f0c;
+    font-size: 15pt;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 170px;
+  
+     
+}
+
+
 
 ul#album-fotos{        /*criou -se uma lista em html, depois com css a lista ficou com o formato de quadrados a flutuar*/
     width: auto;   /*no ecra. mudou-se por fim o background de cada quadrado atraves do url, cada <li> levou um id*/
@@ -9,6 +24,7 @@ ul#album-fotos{        /*criou -se uma lista em html, depois com css a lista fic
     padding: 50px;
     overflow: hidden;
     list-style: none;
+    height: 775px;  
 }
 
 ul#album-fotos li{
@@ -25,16 +41,17 @@ ul#album-fotos li{
 ul#album-fotos li span{     /*para tornar a legenda invisivel*/
     opacity:0;              /*opacity 0*/
     color: #edf5e1;
-    text-shadow: 1px 1px 1px black;
-    background-color: rgba(0,0,0,.3);
+    text-shadow: 1px 1px 1px #907163;
+    background-color: #daa520;
     font-size: 11pt;
-    line-height: 370px;     /*coloca a legenda no fundo*/
+    line-height: 0px;     /*coloca a legenda no fundo*/
     padding: 5px;
 
 }
 
 ul#album-fotos li:hover{
     -webkit-transform: scale(1.5);
+    
 }
 
 
