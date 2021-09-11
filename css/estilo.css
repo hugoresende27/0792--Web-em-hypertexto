@@ -44,13 +44,7 @@ figure img#logo{
            
  }
 
- /*formatacao titulos em h1*/
- h1.titulos{
-     font-family:rockwell;
-     font-size: 20pt;
-     text-align: center;
-     color:#daa520 ;
- }
+ 
 
  nav#menu li:hover{
      background-color: #daa520;  
@@ -62,15 +56,40 @@ figure img#logo{
      text-decoration: none;     /*retira o sublinhado dos links*/
  }
 
-/*formatacao slide show*/
-* {box-sizing:border-box}
+ /*formatacao titulos em h1*/
+ h1.titulos{
+  font-family:rockwell;
+  font-size: 20pt;
+  text-align: center;
+  color:#daa520 ;
+}
 
-/* Slideshow container */
+/*formatacao seccao principal do home*/
+section#principal{
+  text-align: right;
+  padding: 20px;
+  background: url("../img/home_principal.jpg");
+  color: #395C6B;
+  font-family: cursive;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+/*formatacoes conteudo */
 .conteudo {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-bottom: 30px;
 }
+
+
+/* Slideshow container */
+/*formatacao slide show*/
+* {box-sizing:border-box}
+
+
+
 
 /* Hide the images by default */
 .mySlides {
@@ -111,9 +130,7 @@ figure img#logo{
   color: #f2f2f2;
   font-size: 25px;
   padding: 0px 20px;
-  position: absolute;
-  top: 30px;
-  left:50%;
+  position: relative;
   text-align: left;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
@@ -125,9 +142,10 @@ p.txt_slider{
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -137,7 +155,7 @@ p.txt_slider{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #daa520;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -150,9 +168,9 @@ p.txt_slider{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 3.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.5s;
 }
 
 @-webkit-keyframes fade {
@@ -165,10 +183,18 @@ p.txt_slider{
   to {opacity: 1}
 }
 
+img.img_slider{
+  position: relative;
+  display: block;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+}
+
 /*estilos do footer */
 
 footer{
-    
+    padding-top: 20px;
     color: #907163;
     clear: both;
     text-align: center;
@@ -187,4 +213,25 @@ footer a{
 
 footer a:hover{
     color: red;
+}
+
+/*botao topo*/
+#myBtn {
+  /*display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #8d8741; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #daa520; /* Add a dark-grey background on hover */
 }
